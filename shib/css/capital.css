@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fjalla One", sans-serif;
+  color: #e69aa4;
+}
+header {
+  @media (max-width: 425px) {
+    background-color: #e69aa4;
+    height: 66px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+  }
+}
+
+body {
+  background-image: url(https://shibuya-bay.vercel.app/bg-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1700px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  @media (max-width: 768px) {
+    justify-content: center;
+    gap: 100px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #e69aa4;
+    /* font-size: 30px */
+    font-size: clamp(0.875rem, 0.0625rem + 2.6vw, 2.5rem);
+    font-weight: 600;
+  }
+
+  div {
+    img {
+      width: clamp(1.875rem, 1.2388rem + 2.6786vw, 3.75rem);
+    }
+  }
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  padding: 30px 0px;
+
+  @media (max-width: 768px) {
+    img {
+      width: 233px;
+    }
+  }
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+
+main {
+  h1 {
+    font-size: clamp(6.25rem, 4.0672rem + 9.7015vw, 14.375rem);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: clamp(6.25rem, 4.0672rem + 9.7015vw, 14.375rem);
+
+    @media (max-width: 768px) {
+      font-size: clamp(3.4375rem, 1.0028rem + 10.8209vw, 12.5rem);
+    }
+    @media (max-width: 425px) {
+      font-size: 100px;
+    }
+  }
+  .venture {
+    display: flex;
+    @media (max-width: 425px) {
+      img {
+      }
+    }
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    h4 {
+      font-size: 29px;
+    }
+  }
+}
+
+.venture {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  @media (max-width:425px) {
+    img{
+width: 400px;
+height:20px;
+    }
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: clamp(1rem, 0.9328rem + 0.2985vw, 1.25rem);
+  }
+
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+.value_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  @media (max-width: 1700px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: clamp(6.25rem, 4.5709rem + 7.4627vw, 12.5rem);
+    text-transform: uppercase;
+    @media (max-width: 425px) {
+      font-size: 70px;
+    }
+  }
+
+  div {
+    button {
+      width: 300px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 1px solid #e69aa4;
+      transition: 0.4s;
+
+      &:hover {
+        box-shadow: 8px 5px 0px 0px rgba(255, 255, 255, 1);
+        background-color: #e69aa4;
+        color: #251607;
+      }
+
+      img {
+        width: 40px;
+      }
+    }
+
+    h3 {
+      color: #fff;
+      font-size: clamp(2.1875rem, 1.5998rem + 2.6119vw, 4.375rem);
+    }
+  }
+}
+
+.grid-wrap {
+  /*display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;*/
+  display: flex;
+  gap: 10px;
+  padding: 40px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media (max-width:425px) {
+    flex-direction: row;
+  }
+
+  div {
+    min-height: 600px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+
+    transition: 0.5s;
+
+    &:hover {
+      flex-grow: 3;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+
+    div {
+      min-height: 400px;
+      gap: 50px;
+    }
+  }
+}
+
+.box1 {
+  background-image: url(https://shibuya-bay.vercel.app/value-1.jpg);
+}
+
+.box2 {
+  background-image: url(https://shibuya-bay.vercel.app/value-2.jpg);
+  background-position: right !important;
+}
+
+.box3 {
+  background-image: url(https://shibuya-bay.vercel.app/value-3.jpg);
+}
+
+.box4 {
+  background-image: url(https://shibuya-bay.vercel.app/value-4.jpg);
+}
+
+.value-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  h1 {
+    font-size: clamp(6.25rem, 4.5709rem + 7.4627vw, 12.5rem);
+    text-transform: uppercase;
+  }
+
+  div {
+    button {
+      width: 300px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 1px solid #e69aa4;
+      transition: 0.4s;
+
+      &:hover {
+        box-shadow: 8px 5px 0px 0px rgba(255, 255, 255, 1);
+        background-color: #e69aa4;
+        color: #251607;
+      }
+
+      img {
+        width: 40px;
+      }
+    }
+
+    h3 {
+      color: #fff;
+      font-size: clamp(2.1875rem, 1.5998rem + 2.6119vw, 4.375rem);
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #e69aa4;
+    /* font-size: 30px */
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .img44 {
+      width: 700px;
+      text-align: center;
+    }
+  }
+  @media (max-width:425px) {
+    .img44{
+        width: 100px;
+        text-align: center;
+        padding-right: 1000px;
+        font-size: 100px;
+    }
+  }
+
+  .div1 {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  h1 {
+    font-size: clamp(1rem, -0.2425rem + 5.5224vw, 5.625rem);
+    text-align: center;
+  }
+}
+
+.station_text {
+  h1 {
+    font-size: 200px;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 100px;
+    }
+  }
+}

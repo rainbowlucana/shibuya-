@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fjalla One", sans-serif;
+}
+
+body {
+    background-image: url(https://shibuya-bay.vercel.app/loader-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-image: url(https://shibuya-bay.vercel.app/bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    animation: 3s anim1;
+
+    h1 {
+        color: #e69aa4;
+        font-size: clamp(1.125rem, .939rem + .76vw, 1.75rem);
+    }
+}
+
+main {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        padding-top: 50px;
+        animation: 1s text;
+
+        a {
+            color: #fff;
+            font-size: clamp(3.75rem, .215rem + 14.5vw, 15.625rem);
+            text-decoration: none;
+        }
+
+        p {
+            color: #fff;
+            font-size: clamp(1.25rem, .692rem + 2.29vw, 3.125rem);
+            text-align: center;
+        }
+    }
+
+}
+
+footer {
+    background-image: url(https://shibuya-bay.vercel.app/bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    animation: 3s anim2;
+
+    h1 {
+        color: #e69aa4;
+        font-size: clamp(1.125rem, .939rem + .76vw, 1.75rem);
+        text-align: center;
+    }
+}
+
+@keyframes anim1 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
